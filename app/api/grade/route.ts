@@ -4,6 +4,7 @@ import { uploadPDF } from '@/lib/gdrive'
 import { generateGradePDF } from '@/lib/pdf-generator'
 
 export const runtime = 'nodejs'
+export const maxDuration = 60
 
 // Lấy tất cả API keys từ env (bỏ qua key trống)
 function getApiKeys(): string[] {

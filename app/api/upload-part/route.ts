@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { uploadAudio, uploadText } from '@/lib/gdrive'
 
 export const runtime = 'nodejs'
+export const maxDuration = 30
 
 const PART_NAMES: Record<string, string> = {
   '1': 'part1-self-introduction.webm',
